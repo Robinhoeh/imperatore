@@ -32,6 +32,9 @@ module.exports = {
           default: '#2ECDA7',
           darkgreen: '#25A989'
         }
+      },
+      fontFamily: {
+        'default' : ['Syncopate', 'sans-serif']
       }
     }
   },
