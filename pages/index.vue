@@ -1,7 +1,11 @@
 <template>
-  <Tutorial/>
+  <div class="index">
+    <!-- TODO: add multipath component -->
+  </div>
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
+
+<style lang="scss" scoped></style>
