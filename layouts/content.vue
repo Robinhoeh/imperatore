@@ -1,11 +1,34 @@
 <template>
-  <div class="content">
+  <div class="content-view">
+    <AppHeader :navItems="navItems" />
     <Nuxt />
+    <!-- AppFooter -->
   </div>
 </template>
 
 <script>
-export default {};
+import AppHeader from "@/components/AppHeader.vue";
+
+export default {
+  components: {
+    AppHeader
+  },
+  data() {
+    return {
+      navItems: [
+        {
+          domain: ["music", "videos", "photography"]
+        },
+        {
+          information: ["contact", "testimonials"]
+        },
+        {
+          language: ["Eng", "Port"]
+        }
+      ]
+    };
+  }
+};
 </script>
 
 <style lang="scss"></style>
