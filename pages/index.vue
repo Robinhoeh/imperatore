@@ -16,15 +16,15 @@ export default {
   data() {
     return {
       categories: {
-        music: {
-          title: "Listen",
-          description: "Check out my music",
-          backgroundImage: MusicImg
-        },
         video: {
           title: "Watch",
           description: "Check out some of my new productions",
           backgroundImage: VideoImg
+        },
+        music: {
+          title: "Listen",
+          description: "Check out my music",
+          backgroundImage: MusicImg
         },
         photography: {
           title: "Gaze",
