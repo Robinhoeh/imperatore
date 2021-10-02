@@ -1,5 +1,7 @@
 <template>
-  <div class="content-view">
+  <div
+    class="content-view tw-bg-black-default tw-text-white-default xl:tw-px-5"
+  >
     <AppHeader :navItems="navItems" />
     <Nuxt />
     <!-- AppFooter -->
@@ -23,7 +25,7 @@ export default {
           information: ["contact"]
         },
         {
-          language: ["Eng", "Port"]
+          language: ["Eng"]
         }
       ]
     };
