@@ -2,16 +2,18 @@
   <div class="content-view tw-bg-black-default tw-text-white-default tw-px-5">
     <AppHeader :navItems="navItems" />
     <Nuxt />
-    <!-- AppFooter -->
+    <AppFooter :navItems="navItems" />
   </div>
 </template>
 
 <script>
 import AppHeader from "@/components/AppHeader.vue";
+import AppFooter from "@/components/AppFooter.vue";
 
 export default {
   components: {
-    AppHeader
+    AppHeader,
+    AppFooter
   },
   data() {
     return {
