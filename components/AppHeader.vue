@@ -4,7 +4,7 @@
       <li>Ricardo Imperatore</li>
     </ul>
     <ul>
-      <li v-for="(item, index) in items" :key="index">
+      <li v-for="(item, index) in navItems" :key="index">
         {{ item }}
       </li>
     </ul>

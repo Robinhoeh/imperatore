@@ -20,7 +20,7 @@ export default {
           domain: ["music", "videos", "photography"]
         },
         {
-          information: ["contact", "testimonials"]
+          information: ["contact"]
         },
         {
           language: ["Eng", "Port"]
