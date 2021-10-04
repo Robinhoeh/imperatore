@@ -28,6 +28,14 @@ module.exports = {
         white: {
           default: '#ffffff'
         },
+        dark: {
+          default: '#000000',
+          text: '#ffffff',
+        },
+        light: {
+          background: '#F5F5F5',
+          text: '#000000'
+        },
         green: {
           default: '#2ECDA7',
           darkgreen: '#25A989'
