@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="app-footer tw-flex tw-justify-around xl:tw-flex xl:tw-justify-between tw-py-5 tw-mx-5 tw-border-t tw-mt-14 tw-absolute tw-bottom-0"
+    class="app-footer tw-flex xl:tw-flex tw-justify-between tw-py-5 tw-mx-5 tw-border-t tw-absolute tw-bottom-0"
   >
     <ul>
       <li>Site by: Robin Watson</li>
@@ -24,4 +24,8 @@ export default {
 };
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+.app-footer {
+  width: 94vw;
+}
+</style>

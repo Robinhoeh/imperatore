@@ -1,5 +1,5 @@
 <template>
-  <div
+  <header
     class="app-header tw-flex tw-justify-around xl:tw-flex xl:tw-justify-between tw-py-5 tw-mx-5 tw-border-b tw-mb-14"
   >
     <ul>
@@ -15,16 +15,26 @@
         {{ info }}
       </li>
     </ul>
-    <ul>
+    <ul class="tw-flex tw-justify-around tw-items-center tw-w-20">
+      <li>
+        <MoonDarkIcon />
+      </li>
       <li v-for="(lang, index) in navItems[2].language" :key="index">
         {{ lang }}
       </li>
     </ul>
-  </div>
+  </header>
 </template>
 
 <script>
+import MoonDarkIcon from "@/assets/svgs/MoonDarkIcon";
+import MoonLightIcon from "@/assets/svgs/MoonLightIcon";
+
 export default {
+  components: {
+    MoonDarkIcon,
+    MoonLightIcon
+  },
   props: {
     navItems: {
       type: Array,
