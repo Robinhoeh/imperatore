@@ -1,5 +1,7 @@
 <template>
-  <div class="content-view tw-bg-black-default tw-text-white-default tw-px-5">
+  <div
+    class="content-view dark:tw-bg-dark-default dark:tw-text-dark-text tw-bg-light-background tw-text-light-text tw-px-5"
+  >
     <AppHeader :navItems="navItems" />
     <Nuxt />
     <AppFooter :navItems="navItems" />

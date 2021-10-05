@@ -24,6 +24,19 @@ export default {
   css: [
     `~/assets/styles/main.scss`
   ],
+  
+  //purge for prod
+  purgeCSS: {    
+    whitelist: ['dark-mode'],  
+  },
+
+  // Default tailwind config
+  tailwindcss: {
+    cssPath: '~/assets/css/tailwind.css',
+    configPath: 'tailwind.config.js',
+    exposeConfig: false,
+    config: {}
+  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -36,7 +49,12 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode'
   ],
+
+  colorMode: {
+    classSuffix: ''
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -50,4 +68,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
+  
 }

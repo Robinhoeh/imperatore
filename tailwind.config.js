@@ -1,16 +1,32 @@
 module.exports = {
   mode: 'jit',
   purge: [
-
     './public/**/*.html',
-
     './src/**/*.{js,jsx,ts,tsx,vue}',
-
+    'components/**/*.vue',
+    'layouts/**/*.vue',
+    'pages/**/*.vue',
+    'plugins/**/*.js',
+    'nuxt.config.js'
   ],
   prefix: 'tw-',
-  important: true,
+  // important: true,
   darkMode: 'class', // or 'media' or 'class'
   theme: {
+    colors: {
+      dark: {
+        default: '#000000',
+        text: '#ffffff',
+      },
+      light: {
+        background: '#F5F5F5',
+        text: '#000000'
+      },
+      green: {
+        default: '#2ECDA7',
+        darkgreen: '#25A989'
+      }
+    },
     extend: {
       screens: {
         'sm': '640px',
@@ -54,5 +70,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-dark-mode')()
+  ],
 }

@@ -1,6 +1,6 @@
 <template>
   <header
-    class="app-header tw-flex tw-justify-around xl:tw-flex xl:tw-justify-between tw-py-5 tw-mx-5 tw-border-b tw-mb-14"
+    class="app-header dark:tw-text-dark-text tw-text-light-text tw-flex tw-justify-around xl:tw-flex xl:tw-justify-between tw-py-5 tw-mx-5 tw-border-b tw-mb-14"
   >
     <ul>
       <li>Ricardo Imperatore</li>
@@ -16,8 +16,9 @@
       </li>
     </ul>
     <ul class="tw-flex tw-justify-around tw-items-center tw-w-20">
-      <li>
-        <MoonDarkIcon />
+      <li @click="toggleThemeMode" class="hover:cursor-pointer">
+        <MoonDarkIcon v-if="isDarkMode" />
+        <MoonLightIcon v-else />
       </li>
       <li v-for="(lang, index) in navItems[2].language" :key="index">
         {{ lang }}
@@ -39,6 +40,17 @@ export default {
     navItems: {
       type: Array,
       required: true
+    }
+  },
+  data() {
+    return {
+      isDarkMode: true
+    };
+  },
+  methods: {
+    toggleThemeMode() {
+      document.documentElement.classList.toggle("dark");
+      this.isDarkMode = !this.isDarkMode;
     }
   }
 };
