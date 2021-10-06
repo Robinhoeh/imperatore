@@ -2,7 +2,7 @@
   <div class="contact-page">
     <div>
       <h2
-        class="tw-text-5xl lg:tw-text-[100px] tw-font-semibold tw-mb-24 lg:tw-mb-56"
+        class="tw-text-5xl lg:tw-text-[100px] tw-font-semibold tw-mb-24 lg:tw-mb-56 xl:tw-mb-80"
       >
         Get in touch
       </h2>
