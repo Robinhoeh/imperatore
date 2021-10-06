@@ -3,7 +3,11 @@
     class="app-header dark:tw-text-dark-text tw-text-light-text tw-flex tw-justify-around xl:tw-flex xl:tw-justify-between tw-py-5 tw-mx-5 tw-border-b tw-mb-14"
   >
     <ul>
-      <li>Ricardo Imperatore</li>
+      <li>
+        <nuxt-link to="/">
+          Ricardo Imperatore
+        </nuxt-link>
+      </li>
     </ul>
     <ul class="xl:tw-flex xl:tw-justify-between xl:tw-w-80">
       <li v-for="(item, index) in navItems[0].domain" :key="index">

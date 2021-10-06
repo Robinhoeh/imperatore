@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="app-footer tw-flex xl:tw-flex tw-justify-between tw-py-5 tw-mx-5 tw-border-t tw-absolute tw-bottom-0"
+    class="app-footer tw-flex xl:tw-flex tw-justify-between tw-py-5 tw-mx-5 tw-border-t tw-bottom-0"
   >
     <ul>
       <li class="tw-text-xs">Site by: Robin Watson</li>
