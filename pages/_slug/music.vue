@@ -1,8 +1,10 @@
 <template>
   <div class="music">
-    <section class="music-links tw-pb-32">
-      <h2 class="tw-text-5xl lg:tw-text-[100px] tw-font-semibold tw-mb-2">
-        Boteco Eletro
+    <section class="music-links tw-pb-24">
+      <h2
+        class="tw-text-5xl lg:tw-text-[100px] tw-font-semibold tw-mb-2 md:tw-mb-4"
+      >
+        Botecoeletro
       </h2>
       <div>
         <div
@@ -13,27 +15,47 @@
             href="https://open.spotify.com/artist/5rMbIlqzkwGfA1n9RAwgUE"
             target="_blank"
           >
-            <SpotifyIconLight class="tw-w-7 md:tw-w-11" />
+            <SpotifyIconLight class="tw-w-8 md:tw-w-11" />
           </a>
           <a href="https://soundcloud.com/ricardoimperatore" target="_blank">
-            <SoundCloudIconLight class="tw-w-7 md:tw-w-11" />
+            <SoundCloudIconLight class="tw-w-8 md:tw-w-11" />
           </a>
           <a href="https://www.youtube.com/user/botecoeletro" target="_blank">
-            <YoutubeIconLight class="tw-w-7 md:tw-w-11" />
+            <YoutubeIconLight class="tw-w-8 md:tw-w-11" />
           </a>
           <a href="https://www.facebook.com/ricardoimperatore" target="_blank">
-            <FacebookIconLight class="tw-w-7 md:tw-w-11" />
+            <FacebookIconLight class="tw-w-8 md:tw-w-11" />
           </a>
         </div>
         <div v-else>
-          <SpotifyIconDark class="tw-w-7 md:tw-w-11" />
-          <SoundCloudIconDark class="tw-w-7 md:tw-w-11" />
-          <YoutubeIconDark class="tw-w-7 md:tw-w-11" />
-          <FacebookIconDark class="tw-w-7 md:tw-w-11" />
+          <SpotifyIconDark class="tw-w-8 md:tw-w-11" />
+          <SoundCloudIconDark class="tw-w-8 md:tw-w-11" />
+          <YoutubeIconDark class="tw-w-8 md:tw-w-11" />
+          <FacebookIconDark class="tw-w-8 md:tw-w-11" />
         </div>
       </div>
     </section>
-    <section class="biography-section">
+    <section class="discography-section tw-mb-32">
+      <h4 class="tw-border-b tw-pb-5 tw-max-w-[420px] lg:tw-text-5xl tw-mb-8">
+        Discography
+      </h4>
+      <div>
+        <h4>Remixes</h4>
+        <div
+          class="tw-bg-contain tw-bg-center tw-h-52`"
+          :style="
+            `background: url(${discography.remix1.backgroundImg}) no-repeat center center contain`
+          "
+        >
+          {{ discography.remix1.title }}
+        </div>
+      </div>
+      <div>
+        <h4>Albums</h4>
+      </div>
+    </section>
+
+    <section class="biography-section tw-mb-32">
       <h4 class="tw-border-b tw-pb-5 tw-max-w-[350px] lg:tw-text-5xl tw-mb-8">
         Biography
       </h4>
@@ -52,7 +74,6 @@
         </div>
       </div>
     </section>
-    <section class="discography-section"></section>
   </div>
   <!-- Thanks for the free icons! -->
   <!-- <a href="https://iconscout.com/icons/spotify" target="_blank">Spotify Icon</a> by <a href="https://iconscout.com/contributors/alexandru-stoica">Alexandru Stoica</a> on <a href="https://iconscout.com">Iconscout</a> -->
@@ -67,6 +88,10 @@ import SpotifyIconLight from "@/assets/svgs/SpotifyIconLight";
 import SpotifyIconDark from "@/assets/svgs/SpotifyIconDark";
 import SoundCloudIconDark from "@/assets/svgs/SoundCloudIconDark";
 import SoundCloudIconLight from "@/assets/svgs/SoundCloudIconLight";
+import Boteco1 from "@/assets/images/boteco-1.png";
+import Boteco2 from "@/assets/images/boteco-2.png";
+import Tubarao from "@/assets/images/remix-tubarao.png";
+import Dona from "@/assets/images/remix-dona.png";
 
 export default {
   // Add prefered layout for each page
@@ -84,6 +109,27 @@ export default {
   data() {
     return {
       themeMode: "light",
+      discography: {
+        remix1: {
+          title: "Dona Ontete",
+          subTitle: "Imperatore Remix",
+          album: "Mexe Mexe",
+          backgroundImg: Dona
+        },
+        remix2: {
+          title: "Festa da Tubarao",
+          subTitle: "Remix",
+          backgroundImg: Tubarao
+        },
+        album1: {
+          title: "Boteco Eletro 1",
+          backgroundImg: Boteco1
+        },
+        album2: {
+          title: "Boteco Eletro vol.2",
+          backgroundImg: Boteco2
+        }
+      },
       biography: {
         descriptionOne:
           "Brazilian, musician, producer, photographer, and activist could describe Ricardo Imperatore.  Like the work of multi-disciplinary artists of all sorts, each of Imperatore’s art practices influences the others.  His brand of documentary photography:  informal and playful, involved and passionate - reflects his music: electric, eclectic, personal and political... uniquely entertaining.  His work is wrapped around his love and loss relationship to Rio de Janeiro."
