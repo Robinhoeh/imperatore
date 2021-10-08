@@ -40,7 +40,7 @@
         Discography
       </h4>
       <div
-        class="tw-mb-14 tw-flex tw-flex-col tw-items-center md:tw-grid md:tw-grid-cols-2 md:tw-gap-4 xl:tw-grid-cols-1"
+        class="tw-mb-14 tw-flex tw-flex-col tw-items-center md:tw-grid md:tw-grid-cols-2 md:tw-gap-4 xl:tw-grid-cols-4"
       >
         <div
           class="tw-bg-center tw-mb-11 tw-flex tw-flex-col tw-items-center md:tw-items-start"
