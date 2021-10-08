@@ -2,7 +2,7 @@
   <div class="music">
     <section class="music-links tw-pb-24">
       <h2
-        class="tw-text-xl md:tw-text-[60px] lg:tw-text-[80px] tw-font-semibold tw-mb-2 md:tw-mb-5 lg:tw-mb-8"
+        class="tw-text-2xl md:tw-text-[60px] lg:tw-text-[80px] tw-font-semibold tw-mb-2 md:tw-mb-5 lg:tw-mb-8"
       >
         Botecoeletro
       </h2>
@@ -36,7 +36,9 @@
       </div>
     </section>
     <section class="discography-section tw-mb-32">
-      <h4 class="tw-border-b tw-pb-5 tw-max-w-[420px] lg:tw-text-5xl tw-mb-8">
+      <h4
+        class="tw-text-xl tw-border-b tw-pb-5 tw-max-w-[420px] sm:tw-text-5xl tw-mb-8"
+      >
         Discography
       </h4>
       <div
