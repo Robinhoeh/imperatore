@@ -2,7 +2,7 @@
   <div class="music">
     <section class="music-links tw-pb-24">
       <h2
-        class="tw-text-5xl lg:tw-text-[100px] tw-font-semibold tw-mb-2 md:tw-mb-4"
+        class="tw-text-xl md:tw-text-[60px] lg:tw-text-[80px] tw-font-semibold tw-mb-2 md:tw-mb-5 lg:tw-mb-8"
       >
         Botecoeletro
       </h2>
@@ -36,25 +36,33 @@
       </div>
     </section>
     <section class="discography-section tw-mb-32">
-      <h4 class="tw-border-b tw-pb-5 tw-max-w-[420px] lg:tw-text-5xl tw-mb-4">
+      <h4 class="tw-border-b tw-pb-5 tw-max-w-[420px] lg:tw-text-5xl tw-mb-8">
         Discography
       </h4>
-      <div class="tw-mb-14 tw-flex tw-flex-col tw-items-center">
+      <div
+        class="tw-mb-14 tw-flex tw-flex-col tw-items-center md:tw-grid md:tw-grid-cols-2 md:tw-gap-4 xl:tw-grid-cols-1"
+      >
         <div
-          class="tw-bg-center tw-mb-11 tw-flex tw-flex-col tw-items-center"
+          class="tw-bg-center tw-mb-11 tw-flex tw-flex-col tw-items-center md:tw-items-start"
           v-for="album in discography"
           :key="album.id"
         >
-          <h5 class="tw-mb-2">{{ album.title }}</h5>
-          <h5 class="tw-mb-2" v-if="album.subTitle">{{ album.subTitle }}</h5>
-          <h5 class="tw-mb-2" v-if="album.album">{{ album.album }}</h5>
+          <div class="tw-flex tw-flex-col tw-min-h-[100px]">
+            <h5 class="tw-mb-2">{{ album.title }}</h5>
+            <h5 class="tw-mb-2" v-if="album.subTitle">{{ album.subTitle }}</h5>
+            <h5 class="tw-mb-2" v-if="album.album">{{ album.album }}</h5>
+            <h5 class="tw-mb-2" v-if="album.releaseDate">
+              {{ album.releaseDate }}
+            </h5>
+          </div>
           <a :href="album.spotifyLink" target="_blank">
-            <img :src="album.backgroundImg" alt="" class="tw-w-48" />
+            <img
+              :src="album.backgroundImg"
+              alt=""
+              class="tw-max-h-80 xl:tw-max-h-96"
+            />
           </a>
         </div>
-      </div>
-      <div>
-        <h4>Albums</h4>
       </div>
     </section>
 
@@ -118,6 +126,7 @@ export default {
           subTitle: "Imperatore Remix",
           album: "Mexe Mexe",
           backgroundImg: Dona,
+          releaseDate: "2020",
           spotifyLink:
             "https://open.spotify.com/track/7ylgplJpJgpdxGrvBQQPPV?si=3cde3787593f4abf",
           id: 1
@@ -126,6 +135,7 @@ export default {
           title: "Festa da Tubarao",
           subTitle: "Remix",
           backgroundImg: Tubarao,
+          releaseDate: "2019",
           spotifyLink:
             "https://open.spotify.com/track/1djUMs5HUoB2w3yOoBQgg9?si=761ad4ccb84f41d2",
           id: 2
@@ -133,6 +143,7 @@ export default {
         {
           title: "Boteco Eletro 1",
           backgroundImg: Boteco1,
+          releaseDate: "2004",
           spotifyLink:
             "https://open.spotify.com/album/3WojC86QGhmaAZaCD0dLWv?si=yfiBEOR5Sj-Wmk-oE755Fw&dl_branch=1",
           id: 3
@@ -140,6 +151,7 @@ export default {
         {
           title: "Boteco Eletro vol.2",
           backgroundImg: Boteco2,
+          releaseDate: "2012",
           spotifyLink:
             "https://open.spotify.com/album/0KGrzYGeBFb35KlL1RQXBB?si=_Q8ZpjmIRLqRoXLAQOdlPw&dl_branch=1",
           id: 4
