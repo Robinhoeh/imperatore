@@ -1,0 +1,8 @@
+<template>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path
+      d="M22.707,12.707a1,1,0,0,0,.216-.325.986.986,0,0,0,0-.764,1,1,0,0,0-.216-.325l-8-8a1,1,0,0,0-1.414,1.414L19.586,11H2a1,1,0,0,0,0,2H19.586l-6.293,6.293a1,1,0,0,0,1.414,1.414Z"
+    />
+  </svg>
+  <!-- <a href="https://iconscout.com/icons/right-arrow" target="_blank">Right Arrow Icon</a> on <a href="https://iconscout.com">Iconscout</a> -->
+</template>
