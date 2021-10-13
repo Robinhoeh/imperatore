@@ -7,7 +7,7 @@
       <slot name="card-number"></slot>
     </div>
     <div>
-      <slot name="image"></slot>
+      <slot name="video"></slot>
     </div>
     <div>
       <slot name="title"></slot>

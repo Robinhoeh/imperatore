@@ -10,7 +10,15 @@
         <GalleryCard>
           <template #description> </template>
           <template #card-number> </template>
-          <template #image> </template>
+          <template #video>
+            <div>
+              <VideoPlayer src="https://youtu.be/WxerD1JlaZo"></VideoPlayer>
+              <lite-youtube
+                videoid="WxerD1JlaZo"
+                playlabel="Rock in Rio"
+              ></lite-youtube>
+            </div>
+          </template>
           <template #title> </template>
         </GalleryCard>
       </div>
@@ -20,9 +28,12 @@
 
 <script>
 import GalleryCard from "@/components/GalleryCard";
+import VideoPlayer from "nuxt-video-player";
+
+require("nuxt-video-player/src/assets/css/main.css");
 
 export default {
-  components: { GalleryCard },
+  components: { GalleryCard, VideoPlayer },
   // Add prefered layout for each page
   layout: "content",
   data() {
