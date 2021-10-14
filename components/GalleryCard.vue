@@ -1,9 +1,7 @@
 <template>
   <div class="gallery-card">
-    <div>
+    <div class="tw-flex tw-justify-between tw-items-center tw-mb-2">
       <slot name="description"></slot>
-    </div>
-    <div>
       <slot name="card-number"></slot>
     </div>
     <div>

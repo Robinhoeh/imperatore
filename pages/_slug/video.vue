@@ -7,19 +7,30 @@
         Videos
       </h4>
       <div class="tw-mb-14">
-        <GalleryCard>
-          <template #description> </template>
-          <template #card-number> </template>
+        <GalleryCard v-for="content in galleryContent" :key="content.id">
+          <template #description>
+            <h5>{{ content.description }}</h5>
+          </template>
+          <template #card-number>
+            <h4 class="tw-font-semibold md:tw-text-[60px]">
+              {{ content.cardNumber }}
+            </h4>
+          </template>
           <template #video>
             <div>
-              <VideoPlayer src="https://youtu.be/WxerD1JlaZo"></VideoPlayer>
               <lite-youtube
                 videoid="WxerD1JlaZo"
                 playlabel="Rock in Rio"
               ></lite-youtube>
             </div>
           </template>
-          <template #title> </template>
+          <template #title>
+            <h2
+              class="tw-mt-3 md:tw-mt-6 tw-font-semibold tw-text-2xl md:tw-text-[60px] lg:tw-text-[80px]"
+            >
+              {{ content.title }}
+            </h2>
+          </template>
         </GalleryCard>
       </div>
     </section>
@@ -28,17 +39,23 @@
 
 <script>
 import GalleryCard from "@/components/GalleryCard";
-import VideoPlayer from "nuxt-video-player";
-
-require("nuxt-video-player/src/assets/css/main.css");
 
 export default {
-  components: { GalleryCard, VideoPlayer },
+  components: { GalleryCard },
   // Add prefered layout for each page
   layout: "content",
   data() {
     return {
-      galleryContent: [{}]
+      galleryContent: [
+        {
+          description: "boTECOeletro volume 2",
+          title: "Rock in Rio",
+          cardNumber: "01/",
+          videoId: "WxerD1JlaZo",
+          playLabel: "Rock in Rio",
+          id: "1"
+        }
+      ]
     };
   }
 };
