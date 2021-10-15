@@ -1,6 +1,6 @@
 <template>
   <header
-    class="app-header dark:tw-text-dark-text tw-text-light-text tw-flex tw-justify-between xl:tw-flex xl:tw-justify-between tw-py-5 tw-mx-0 tw-border-b tw-mb-14"
+    class="app-header dark:tw-text-dark-text tw-text-light-text tw-items-center tw-flex tw-justify-between xl:tw-flex xl:tw-justify-between tw-py-5 tw-mx-0 tw-border-b tw-mb-14"
   >
     <ul>
       <li>
@@ -10,9 +10,7 @@
       </li>
     </ul>
 
-    <ul
-      class="xl:tw-flex xl:tw-justify-between xl:tw-w-80 tw-hidden sm:tw-flex sm:tw-w-[317px] sm:tw-justify-around"
-    >
+    <ul class="xl:tw-flex xl:tw-justify-between xl:tw-w-80 tw-hidden">
       <li v-for="(item, index) in navItems[0].domain" :key="index">
         {{ item }}
       </li>
@@ -31,17 +29,62 @@
         {{ lang }}
       </li>
     </ul>
+    <ul>
+      <li class="xl:tw-hidden tw-cursor-pointer" @click="toggleMenu">
+        <MenuIconDark />
+      </li>
+    </ul>
+
+    <!-- Mobile Menu -->
+    <div
+      class="xl:tw-hidden tw-flex-col tw-bg-green-default tw-text-black-default tw-p-24 tw-absolute tw--top-0 tw--bottom-0 tw--right-0 tw-left-0 tw-z-10 tw-justify-start tw-text-xl lg:tw-text-5xl"
+      :class="[isMenuOpen ? 'tw-flex' : 'tw-hidden']"
+    >
+      <ul class="tw-relative">
+        <li
+          v-for="(item, index) in navItems[0].domain"
+          :key="index"
+          class="tw-pb-5"
+        >
+          {{ item }}
+        </li>
+        <li
+          v-for="(info, index) in navItems[1].information"
+          :key="index"
+          class="tw-pb-5"
+        >
+          {{ info }}
+        </li>
+        <li
+          v-for="(lang, index) in navItems[2].language"
+          :key="index"
+          class="tw-pb-5"
+        >
+          {{ lang }}
+        </li>
+        <li
+          class="tw-absolute tw--top-16 tw--right-16 tw-cursor-pointer"
+          @click="toggleMenu"
+        >
+          <CloseIcon />
+        </li>
+      </ul>
+    </div>
   </header>
 </template>
 
 <script>
 import MoonDarkIcon from "@/assets/svgs/MoonDarkIcon";
 import MoonLightIcon from "@/assets/svgs/MoonLightIcon";
+import MenuIconDark from "@/assets/svgs/MenuIconDark.vue";
+import CloseIcon from "@/assets/svgs/CloseIcon.vue";
 
 export default {
   components: {
     MoonDarkIcon,
-    MoonLightIcon
+    MoonLightIcon,
+    MenuIconDark,
+    CloseIcon
   },
   props: {
     navItems: {
@@ -51,13 +94,17 @@ export default {
   },
   data() {
     return {
-      isDarkMode: true
+      isDarkMode: true,
+      isMenuOpen: false
     };
   },
   methods: {
     toggleThemeMode() {
       document.documentElement.classList.toggle("dark");
       this.isDarkMode = !this.isDarkMode;
+    },
+    toggleMenu() {
+      this.isMenuOpen = !this.isMenuOpen;
     }
   }
 };
