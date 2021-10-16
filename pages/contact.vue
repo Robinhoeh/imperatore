@@ -46,9 +46,9 @@ export default {
           id: 1
         },
         {
-          name: "facebook",
-          url: "https://www.facebook.com/ricardoimperatore",
-          shortForm: "Fb",
+          name: "instagram",
+          url: "https://www.instagram.com/ricardo_imperatore/",
+          shortForm: "Ig",
           id: 2
         },
         {

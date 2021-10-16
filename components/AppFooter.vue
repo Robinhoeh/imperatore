@@ -5,7 +5,7 @@
     <ul>
       <li class="tw-text-xs">Site by: Robin Watson</li>
     </ul>
-    <ul>
+    <ul v-if="!isContactPage">
       <li v-for="(info, index) in navItems[1].information" :key="index">
         {{ info }}
       </li>
@@ -19,6 +19,11 @@ export default {
     navItems: {
       type: Array,
       required: true
+    }
+  },
+  computed: {
+    isContactPage() {
+      return this.$route.name === "contact";
     }
   }
 };

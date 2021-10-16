@@ -1,6 +1,8 @@
 <template>
   <div class="index">
-    <MultiPath :categories="categories"></MultiPath>
+    <nuxt-link to="/page">
+      <MultiPath :categories="categories"></MultiPath>
+    </nuxt-link>
   </div>
 </template>
 
@@ -20,19 +22,22 @@ export default {
           title: "Watch",
           description: "Check out some of my new productions",
           backgroundImage: VideoImg,
-          id: "video"
+          id: "video",
+          pathName: "video"
         },
         music: {
           title: "Listen",
           description: "Check out my music",
           backgroundImage: MusicImg,
-          id: "music"
+          id: "music",
+          pathName: "music"
         },
         photography: {
           title: "Gaze",
           description: "Take a look at my gallery",
           backgroundImage: PhotoImg,
-          id: "photography"
+          id: "photography",
+          pathName: "photography"
         }
       }
     };
