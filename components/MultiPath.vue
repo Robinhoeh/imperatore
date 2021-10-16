@@ -10,7 +10,9 @@
         `background: url(${item.backgroundImage}) no-repeat center center`
       "
     >
-      <h4 class="tw-mb-4">{{ item.title }}</h4>
+      <nuxt-link :to="`/${item.pathName}`">
+        <h4 class="tw-mb-4">{{ item.title }}</h4>
+      </nuxt-link>
       <p>{{ item.description }}</p>
     </div>
   </section>

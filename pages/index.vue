@@ -1,8 +1,8 @@
 <template>
   <div class="index">
-    <nuxt-link to="/page">
-      <MultiPath :categories="categories"></MultiPath>
-    </nuxt-link>
+    <!-- <nuxt-link :to="`/${categories.pathName}`"> -->
+    <MultiPath :categories="categories"></MultiPath>
+    <!-- </nuxt-link> -->
   </div>
 </template>
 
