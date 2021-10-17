@@ -10,27 +10,15 @@
       </li>
     </ul>
 
-    <ul class="xl:tw-flex xl:tw-justify-between xl:tw-w-80 tw-hidden">
-      <li v-for="(item, index) in navItems[0].domain" :key="index">
-        {{ item }}
+    <ul class="xl:tw-flex xl:tw-justify-between xl:tw-w-[600px] tw-hidden">
+      <li v-for="(item, index) in navItems" :key="index">
+        <nuxt-link :to="`${item.routeName}`">
+          {{ item.navName }}
+        </nuxt-link>
       </li>
     </ul>
-    <ul class="tw-hidden xl:tw-block">
-      <li v-for="(info, index) in navItems[1].information" :key="index">
-        {{ info }}
-      </li>
-    </ul>
-    <ul class="xl:tw-flex tw-justify-around tw-items-center tw-w-20 tw-hidden">
-      <!-- <li @click="toggleThemeMode" class="hover:cursor-pointer">
-        <MoonDarkIcon v-if="isDarkMode" />
-        <MoonLightIcon v-else />
-      </li> -->
-      <li v-for="(lang, index) in navItems[2].language" :key="index">
-        {{ lang }}
-      </li>
-    </ul>
-    <ul>
-      <li class="xl:tw-hidden tw-cursor-pointer" @click="toggleMenu">
+    <ul class="xl:tw-hidden tw-cursor-pointer">
+      <li @click="toggleMenu">
         <MenuIconDark />
       </li>
     </ul>
@@ -41,26 +29,10 @@
       :class="[isMenuOpen ? 'tw-flex' : 'tw-hidden']"
     >
       <ul class="tw-relative">
-        <li
-          v-for="(item, index) in navItems[0].domain"
-          :key="index"
-          class="tw-pb-5"
-        >
-          {{ item }}
-        </li>
-        <li
-          v-for="(info, index) in navItems[1].information"
-          :key="index"
-          class="tw-pb-5"
-        >
-          {{ info }}
-        </li>
-        <li
-          v-for="(lang, index) in navItems[2].language"
-          :key="index"
-          class="tw-pb-5"
-        >
-          {{ lang }}
+        <li v-for="(item, index) in navItems" :key="index" class="tw-pb-5">
+          <nuxt-link :to="`${item.routeName}`">
+            {{ item.navName }}
+          </nuxt-link>
         </li>
         <li
           class="tw-absolute tw--top-16 tw--right-16 tw-cursor-pointer"

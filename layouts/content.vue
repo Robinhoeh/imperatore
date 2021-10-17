@@ -21,15 +21,33 @@ export default {
     return {
       navItems: [
         {
-          domain: ["music", "videos", "photography"]
+          routeName: "music",
+          navName: "music"
         },
         {
-          information: ["contact"]
+          routeName: "video",
+          navName: "video"
         },
         {
-          language: ["Eng"]
+          routeName: "photography",
+          navName: "photography"
+        },
+        {
+          routeName: "contact",
+          navName: "contact"
         }
       ]
+      // navItems: [
+      //   {
+      //     domain: ["music", "videos", "photography"]
+      //   },
+      //   {
+      //     information: ["contact"]
+      //   },
+      //   {
+      //     language: ["Eng"]
+      //   }
+      // ]
     };
   }
 };
