@@ -1,8 +1,6 @@
 <template>
-  <div class="index">
-    <!-- <nuxt-link :to="`/${categories.pathName}`"> -->
+  <div class="index tw-h-screen">
     <MultiPath :categories="categories"></MultiPath>
-    <!-- </nuxt-link> -->
   </div>
 </template>
 
