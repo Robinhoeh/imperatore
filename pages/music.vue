@@ -94,7 +94,7 @@
       </div>
     </section>
 
-    <section class="biography-section tw-mb-32">
+    <section class="biography-section tw-pb-32">
       <h4 class="tw-border-b tw-pb-5 tw-max-w-[350px] lg:tw-text-5xl tw-mb-8">
         Biography
       </h4>

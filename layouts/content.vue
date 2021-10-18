@@ -1,9 +1,11 @@
 <template>
-  <div
-    class="content-view dark:tw-bg-dark-default dark:tw-text-dark-text tw-bg-light-background tw-text-light-text tw-px-5"
-  >
+  <div>
     <AppHeader :navItems="navItems" />
-    <Nuxt />
+    <div
+      class="content-view dark:tw-bg-dark-default dark:tw-text-dark-text tw-bg-light-background tw-text-light-text tw-px-5 tw-pt-16"
+    >
+      <Nuxt />
+    </div>
     <AppFooter :navItems="navItems" />
   </div>
 </template>
@@ -37,17 +39,6 @@ export default {
           navName: "contact"
         }
       ]
-      // navItems: [
-      //   {
-      //     domain: ["music", "videos", "photography"]
-      //   },
-      //   {
-      //     information: ["contact"]
-      //   },
-      //   {
-      //     language: ["Eng"]
-      //   }
-      // ]
     };
   }
 };

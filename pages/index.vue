@@ -1,5 +1,5 @@
 <template>
-  <div class="index tw-h-screen">
+  <div class="index tw-h-screen tw-flex-grow">
     <MultiPath :categories="categories"></MultiPath>
   </div>
 </template>
