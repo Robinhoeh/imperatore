@@ -134,7 +134,7 @@ export default {
     return {
       galleryContent: [
         {
-          description: "Multiplicidade Festival",
+          description: "boTECOeletro",
           title: "Rock in Rio",
           cardNumber: "01/",
           videoId: "WxerD1JlaZo",
@@ -143,7 +143,7 @@ export default {
           id: "1"
         },
         {
-          description: "boTECOeletro",
+          description: "Multiplicidade Festival",
           title: "Coco Nutz Mass",
           cardNumber: "02/",
           videoId: "yFCEUKfAwss",

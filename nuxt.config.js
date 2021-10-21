@@ -41,7 +41,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    '~/plugins/youtube.client.js'
+    '~/plugins/youtube.client.js',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -51,7 +51,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode'
+    '@nuxtjs/color-mode',
   ],
 
   colorMode: {
@@ -69,6 +69,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
-  
+    
+  },
+
+
 }

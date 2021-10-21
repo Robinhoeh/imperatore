@@ -5,14 +5,42 @@
     >
       Coming Soon...
     </h2>
+    <div>
+      <embed
+        src="/assets/pdf/ricardophotostory.pdf"
+        width="1440px"
+        height="900px"
+      />
+      <embed
+        src="/static/ricardophotostory.pdf"
+        width="1440px"
+        height="900px"
+      />
+    </div>
   </div>
 </template>
 
 <script>
+// import ricardoPdf from "@/assets/pdf/ricardophotostory";
+
 export default {
   // Add prefered layout for each page
-  layout: "content"
+  layout: "content",
+  components: {
+    // ricardoPdf
+  },
+  data() {
+    return {
+      // pdfSrc: ricardoPdf
+    };
+  }
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.pdf {
+  border: 1px solid red;
+  width: 100%;
+  height: 100%;
+}
+</style>
