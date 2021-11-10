@@ -5,7 +5,7 @@
     >
       Coming Soon...
     </h2>
-    <div>
+    <!-- <div>
       <embed
         src="/assets/pdf/ricardophotostory.pdf"
         width="1440px"
@@ -16,7 +16,7 @@
         width="1440px"
         height="900px"
       />
-    </div>
+    </div> -->
   </div>
 </template>
 
