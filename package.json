@@ -1,4 +1,4 @@
-  {
+{
   "name": "ricardo",
   "version": "1.0.0",
   "private": true,
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
+    "@nuxtjs/i18n": "^7.2.0",
     "core-js": "^3.15.1",
     "jspdf": "^2.4.0",
     "lite-youtube-embed": "^0.2.0",
