@@ -50,6 +50,9 @@
           >
             <AmazonIconLight class="tw-w-8 md:tw-w-11" />
           </a>
+          <a href="https://www.deezer.com/it/artist/4570872" target="_blank">
+            <Deezer class="tw-w-8 md:tw-w-11" />
+          </a>
         </div>
         <div v-else>
           <SpotifyIconDark class="tw-w-8 md:tw-w-11" />
@@ -131,6 +134,8 @@ import InstaIconDark from "@/assets/svgs/InstaIconDark";
 import InstaIconLight from "@/assets/svgs/InstaIconLight";
 import AmazonIconDark from "@/assets/svgs/AmazonIconDark";
 import AmazonIconLight from "@/assets/svgs/AmazonIconLight";
+import Deezer from "@/assets/svgs/Deezer";
+
 import Boteco1 from "@/assets/images/boteco-1.png";
 import Boteco2 from "@/assets/images/boteco-2.png";
 import Tubarao from "@/assets/images/remix-tubarao.png";
@@ -151,7 +156,8 @@ export default {
     InstaIconDark,
     InstaIconLight,
     AmazonIconDark,
-    AmazonIconLight
+    AmazonIconLight,
+    Deezer
   },
   data() {
     return {
