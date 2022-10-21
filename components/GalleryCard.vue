@@ -3,7 +3,7 @@
     class="gallery-card tw-mb-16 tw-mt-8 md:tw-mb-28 xl:tw-flex xl:tw-justify-between tw-max-w-screen-xl"
   >
     <div
-      class="tw-flex tw-justify-between tw-items-center tw-mb-2 xl:tw-flex xl:tw-flex-col-reverse"
+      class="tw-flex tw-justify-between tw-items-center tw-mb-2 xl:tw-flex xl:tw-flex-row"
     >
       <slot name="description"></slot>
       <slot name="card-number"></slot>
