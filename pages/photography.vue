@@ -2,9 +2,16 @@
   <div class="photography">
     <h2
       class="tw-text-2xl md:tw-text-[60px] lg:tw-text-[80px] tw-font-semibold tw-mb-2 md:tw-mb-5 lg:tw-mb-8"
-    >
-      Coming Soon...
-    </h2>
+    ></h2>
+    <img
+      src="~/assets/images/gamboa-dream.png"
+      alt=""
+      class="tw-max-h-80 xl:tw-max-h-96"
+    />
+    <a href="/ricardophotostory.pdf" download="">
+      <h3>Download: Ricardo Imperator</h3>
+      <h4>"Gamboa's Dream</h4>
+    </a>
     <!-- <div>
       <embed
         src="/assets/pdf/ricardophotostory.pdf"
