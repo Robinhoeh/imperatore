@@ -29,7 +29,6 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^27.0.5",
     "jest": "^27.0.5",
-    "nuxt-pdf": "^2.0.1",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.15",
     "tailwindcss-dark-mode": "^1.1.7",
