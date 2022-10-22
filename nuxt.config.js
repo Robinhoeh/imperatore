@@ -4,7 +4,7 @@ export default {
   buildDir: 'dist',
   generate: {
     fallback: true
-},
+  },
 
 
 
@@ -98,7 +98,4 @@ export default {
   build: {
     
   },
-  generate: {
-    fallback: true
-  }
 }
