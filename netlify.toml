@@ -1,6 +1,6 @@
 [[redirects]]
     from = "/*"
-    to = "https://ricardoimperatore.com/music"
+    to = "/index.html"
     status = 200
-    force = true
-    headers = {X-From = "Netlify"}
+    
+    
