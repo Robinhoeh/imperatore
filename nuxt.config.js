@@ -3,12 +3,7 @@ export default {
   target: 'static',
   buildDir: 'dist',
   generate: {
-    routes: [
-      '/music',
-      '/photography',
-      '/contact',
-      '/video'
-    ]
+    fallback: true
   },
 
 
@@ -103,4 +98,5 @@ export default {
   build: {
     
   },
+  
 }
