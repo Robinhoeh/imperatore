@@ -15,35 +15,13 @@
       <h3>Ricardo Imperatore</h3>
       <h4>"Gamboa's Dream</h4>
     </a>
-    <!-- <div>
-      <embed
-        src="/assets/pdf/ricardophotostory.pdf"
-        width="1440px"
-        height="900px"
-      />
-      <embed
-        src="/static/ricardophotostory.pdf"
-        width="1440px"
-        height="900px"
-      />
-    </div> -->
   </div>
 </template>
 
 <script>
-// import ricardoPdf from "@/assets/pdf/ricardophotostory";
-
 export default {
   // Add prefered layout for each page
-  layout: "content",
-  components: {
-    // ricardoPdf
-  },
-  data() {
-    return {
-      // pdfSrc: ricardoPdf
-    };
-  }
+  layout: "content"
 };
 </script>
 
